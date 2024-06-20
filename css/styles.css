@@ -197,11 +197,13 @@ h1,h2,h3 {
     text-align: center; /* Alinea el contenido del contenedor al centro */
     padding: 20px; /* Añade un poco de padding alrededor de la sección */
 }
+
 .imgwhats img{
     align-items: center;
     height: 20rem;
     width: 20rem;
 }
+
 
 /** Footer **/
 .footer {
