@@ -199,6 +199,7 @@ h1,h2,h3 {
 }
 .ubicacion{
     text-align: center;
+    align-items: center;
     margin-top: 20rem;
 }
 
