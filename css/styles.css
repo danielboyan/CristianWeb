@@ -28,20 +28,7 @@ body {
     max-width: 120rem;
     margin: 0 auto;
 }
-.boton {
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .5rem;
-    width: 90%;
-    text-align: center;
-    border: none;
-}
+
 @media (min-width: 768px) {
     .boton {
         width: auto;
@@ -156,7 +143,13 @@ h1,h2,h3 {
 }
 
 
+#servicios{
+    margin-top: 10rem;
 
+}
+.servicios h3{
+    font-size: 2.5rem;
+}
 /** Servicios **/
 @media (min-width: 768px) {
     .servicios {
@@ -194,16 +187,20 @@ h1,h2,h3 {
 
 /** Contacto **/
 #contacto {
+    margin-top: 20rem;
     text-align: center; /* Alinea el contenido del contenedor al centro */
     padding: 20px; /* Añade un poco de padding alrededor de la sección */
 }
 
 .imgwhats img{
     align-items: center;
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
 }
-
+.ubicacion{
+    text-align: center;
+    margin-top: 20rem;
+}
 
 /** Footer **/
 .footer {

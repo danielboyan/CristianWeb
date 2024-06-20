@@ -9,42 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="titulo">Crisitan Hermosa</h1>
+        <h1 class="titulo" data-aos="fade-right" data-aos-duration="1500">Crisitan Hermosa</h1>
     </header>
 
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Mi</a>
+            <a href="#" >Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#ubicacion">Ubicacion</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </div>
-    
     <section class="hero">
         <div class="contenido-hero">
             <h2><span>Montaje Industrial y Armados</span></h2> 
-            <div class="ubicacion">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z"/>
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
-                <p>CABA, Buenos Aires</p>
-            </div>
-            <a class="boton" href="#contacto">Contactar</a>
         </div> <!-- .contenido-hero --> 
     </section>
     
     <main class="contenedor sombra">
-        <h2>Mis Servicios</h2>
+        <h2 id="servicios">Mis Servicios</h2>
 
         <div class="servicios">
             <section class="servicio">
-                <h3>Montaje Industrial</h3>
-                <div class="iconos">
+                <h3 data-aos="zoom-in" data-aos-duration="1500">Montaje Industrial</h3>
+                <div class="iconos" data-aos="flip-up" data-aos-duration="1500">
                     <img src="https://indufitmachine.es/wp-content/uploads/2017/05/Montaje-de-estacion-de-valvulas.jpg" class="montaje" width="150" height="150" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 </img>
                 </div>
@@ -52,8 +44,8 @@
             </section>
         
             <section class="servicio">
-                <h3>Armado de Contenedores</h3>
-                <div class="iconos">
+                <h3 data-aos="zoom-in" data-aos-duration="1500">Armado de Contenedores</h3>
+                <div class="iconos" data-aos="flip-up" data-aos-duration="1500">
                     <img src="https://image.made-in-china.com/202f0j00uriUCyMtaWgq/40FT-Containerized-Reverse-Osmosis-Systems-Reverse-Osmosis-Plant.webp" class="armado" width="150" height="150" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 </img>
                 </div>
@@ -62,10 +54,24 @@
 
         
         </div> <!--.servicios-->
+
+        <div class="ubicacion" id="ubicacion">
+            <section>
+                <div class="ubicacionlogo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    <p>Araujo 3248, C1439 Cdad. Autónoma de Buenos Aires</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d205.09468072975056!2d-58.47194826896068!3d-34.666952246628206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1718913556295!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="flip-up" data-aos-duration="3000"></iframe>
+            </section>
+        </div>
     
         <section id="contacto">
             <h2>Contacto</h2>
-            <a href="https://api.whatsapp.com/send?phone=5491127645253&text=Hola%20%F0%9F%91%8B%2C%20vi%20tu%20pagina%20web%20y%20me%20interesan%20tus%20servicios!.%20" class="imgwhats">
+            <a href="https://api.whatsapp.com/send?phone=5491127645253&text=Hola%20%F0%9F%91%8B%2C%20vi%20tu%20pagina%20web%20y%20me%20interesan%20tus%20servicios!.%20" class="imgwhats" data-aos="flip-up" data-aos-duration="1500">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png">
                 <p>+54 9 1127645253</p>
             </a>
@@ -77,6 +83,10 @@
     <footer class="footer">
         <p>Todos los derechos reservados.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
